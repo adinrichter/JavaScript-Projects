@@ -1,0 +1,19 @@
+.button { /* displays buttons as green with a thin black border */
+    text-align: center;
+    background-color: #4CAF50;
+    border: 1px solid black;
+    border-radius: 1px;
+    padding: 6px;
+    font-size: 24px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.button:hover { /* makes button react when hovered over */
+    background-color: #357337;
+    color: white;
+}
+
+p { /* makes font more readable */
+    font-size: 20px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+}
