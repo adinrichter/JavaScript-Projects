@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Math Operators</title>
+        <script src="./JS/main.js"></script>
+    </head>
+    <body>
+        
+        <div>
+            <h1>Welcome to my calculator.<br></h1>
+            <p>Enter 2 numbers and use one of the operator buttons to get a result!</p>
+        </div>
+        <div>
+            <div>
+                <div>
+                    Operator 1: <input type="text" id="var1">
+                    <button onclick="incrementVar1()">+</button>
+                    <button onclick="decrementVar1()">-</button>
+                    <button onclick="randomVar1()">Random</button><br>
+                </div>
+                <div>   
+                    Operator 2: <input type="text" id="var2">
+                    <button onclick="incrementVar2()">+</button>
+                    <button onclick="decrementVar2()">-</button>
+                    <button onclick="randomVar2()">Random</button>
+                </div>
+            </div>
+             <div>
+                 <button onclick="addForm()">+</button>
+                 <button onclick="subtractForm()">-</button>
+                 <button onclick="divideForm()">/</button>
+                 <button onclick="multiplyForm()">*</button>
+                 <button onclick="pythagoreanForm()">⊿</button>
+             </div>
+             <div>
+                 <p id="result"></p>
+                 <p id="run"></p>
+             </div>
+        </div>
+
+    </body>
+</html>
