@@ -57,8 +57,8 @@ function addEntry() {
             const dic = dict;
             dic[key.value] = value.value;
     // clears current input field on success
-            key.value = " ";
-            value.value = " ";
+            key.value = "";
+            value.value = "";
         }
         else {
     // displays an error if there are empty key or value entries
