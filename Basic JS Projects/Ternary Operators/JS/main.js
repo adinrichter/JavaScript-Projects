@@ -53,3 +53,18 @@ function eligibleActivities() {
         return out;
     }
 }
+
+function createSuggestion() {
+    user = document.getElementById("user").value
+    suggested = document.getElementById("suggested").value
+    email = document.getElementById("email").value
+    const feedback = new suggestion(user, suggested, email)
+    alert(`Thank you for your feedback ${feedback.user}!`)
+}
+
+function suggestion(user, suggested, email) {
+    this.user = user;
+    this.suggested = suggested;
+    this.email = email;
+}
+
