@@ -11,35 +11,23 @@ html, body {
     height: 100%;
 }
 
-.header {
-    background-color: blue;
-    height: 10%;
-    width: 100%;
-}
-
-.sidebar {
-    background-color: red;
-    height: 90%;
-    width: 10%;
-    float: left;
-}
-
 .content {
-    background-color: green;
+    background-image: linear-gradient(to bottom right, #000, #444);
     height: 100%;
     width: 100%;
-}
-
-.header-text {
-    text-align: center;
-    font-size: 82px;
+    margin-top: 0;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
 }
 
 .calculator-container {
-    width: 15%;
-    height: 50%;
-    float: left;
-    background-color: purple;
+    width: 22%;
+    height: 60%;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .readout {
