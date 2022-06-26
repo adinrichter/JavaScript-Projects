@@ -1,2 +1,2 @@
 # JavaScript-Projects
-This is where I will put my JavaScript projects
+This is a collection of the JavaScript projects I've done
