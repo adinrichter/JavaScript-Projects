@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Time Elapsed</title>
+        <link rel="stylesheet" href="">
+        <script src="script/react.js"></script>
+        <script src="script/react-dom.js"></script>
+    </head>
+    <body>
+
+    <div>
+        <div id="react-main"></div>
+        <script>
+            var counter = React.createClass({
+                render: function() {
+                    var time = Math.round(this.props.time / 100);
+                    var seconds = time / 10 + (time % 10 ? "" : ".0");
+                    var text = `This page has been running for ${seconds} seconds`;
+                    return React.DOM.p(null, text)
+                }
+            });
+            var factory = React.createFactory(counter);
+            var start = new Date().getTime();
+            setInterval(function() {
+                ReactDOM.render(
+                    factory({time: new Date().getTime() - start}),
+                    document.getElementById("react-main")
+                );
+            }, 50);
+        </script>
+    </div>
+
+    </body>
+</html>
